@@ -1,0 +1,219 @@
+body {
+    font-family: Helvetica, Arial;
+    color: rgb(96, 94, 94);
+    margin: 0;
+}
+
+h1 {
+    font: 500 55px Helvetica, Arial;
+    letter-spacing: 10px;
+    color: rgb(184, 156, 98);
+    text-align: center;
+    position: relative;
+    top: 38px;
+    margin: 0;
+}
+
+h2 {
+    font:italic 600 30px/40px Libre Baskerville, serif;
+    letter-spacing: 0.5px;
+    color: rgb(184, 156, 98);
+    margin: 8px auto;
+}
+
+h4 {
+    font: 400 11px Helvetica, Arial;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgb(120, 120, 140);
+    margin: 0;
+}
+
+h5 {
+    font: 400 11px Helvetica, Arial;
+    text-align: center;
+    margin-top: 54px;
+    margin-bottom: 18px;
+    letter-spacing: 2px; 
+}
+
+span {
+    color: rgb(184, 156, 98);
+}
+
+hr {
+    margin: 0;
+    color: rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 88px;
+}
+
+.guide {
+    background-color: white;
+    height: 214px;
+}
+
+.Navbar {
+    list-style-type: none;  
+    float: left;
+    text-align: center;
+    position: relative;
+    top: 88px;
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    padding: 0;
+    margin: 0; 
+} 
+
+.Navbar li {
+    display: inline;
+    padding: 70px;
+}
+
+.Navbar a {
+    color: rgb(96, 94, 94);
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.fixed-bg-1 {
+    background: url("http://cs-server.usc.edu:45678/hw/hw3/images/image6.jpg") fixed  no-repeat -372px 45px;
+    background-size: 1928px 1183px;
+    width: 1193px;
+    height: 650px;  
+}
+
+.fixed-bg-2 {
+    background: url("http://cs-server.usc.edu:45678/hw/hw3/images/image5.jpg") fixed no-repeat 0 -264px;
+    background-size: 1193px 1236px;
+    width: 1193px;
+    height: 478px;
+}
+
+.scrolling-bg {
+    background-color: white;
+    padding: 125px 130px 60px 130px;
+}
+
+.left-part {
+    float: left;
+    width: 466px;
+}
+
+.left-part img:nth-child(2) {
+    margin-top: 40px;
+    margin-bottom: 66px;
+}
+
+.left-part p {
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+.left-part a {
+    text-decoration: none;
+    color: black;
+}
+
+.left-part a:hover {
+    color: rgb(200, 200, 200);
+    transition: 0.2s linear;
+}
+
+.right-part {
+    position: relative;
+    top: -80px;
+    margin-left: 485px;
+}
+
+.right-part p {
+    margin-top: 12px;
+    margin-bottom: 20px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+}
+
+.right-part a {
+    text-decoration: none;
+    color: black;
+}
+
+.right-part a:hover {
+    color: rgb(200, 200, 200);
+    transition: 0.2s linear;
+}
+
+.right-part img:first-of-type {
+    margin-top: 96px;
+    margin-bottom: 35px;
+}
+
+.para-on-pic {
+    background-image: url("http://cs-server.usc.edu:45678/hw/hw3/images/image7.jpg");
+    width: 929px;
+    height: 603px;
+}
+
+#address {
+    font-size: 12px;
+    position: relative;
+    width: 200px;
+    left: 140px;
+    top: 30px;
+    letter-spacing: 0.5px;
+}
+
+#indent {
+    padding-left: 10px;
+}
+
+#order-online {
+    position: relative;
+    background-color: white;
+    margin: auto 268px;
+    padding: 36px;
+    top: 220px;
+    text-align: center;
+}
+
+#order-online a {
+    text-decoration: none;    
+    font: normal 400 27px/55px Libre Baskerville, serif;
+    color: rgb(96, 94, 94);
+    position: relative;
+    top: 8px;
+    margin: 8px auto;
+}
+
+#order-online a:hover {
+    color: rgb(200, 200, 200);
+    transition: 0.2s linear;
+}
+
+#order-online h4 {
+    position: relative;
+    top: 10px;
+}
+
+#comment h2{
+    text-align: center;
+}
+
+.copyright {
+    background-color: #b89c62;
+    width: 1193px;
+    height: 214px;
+}
+
+.copyright p {
+    color: white;
+    font-weight: 600;
+    font-size: 13px;
+    position: relative;
+    width: 300px;
+    margin-top: 0;
+    left: 770px;
+    top: 52px;
+}
