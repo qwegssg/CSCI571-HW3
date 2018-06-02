@@ -77,15 +77,21 @@ hr {
     text-decoration: none;
 }
 
+/*order of attributes: 
+    background-color
+    background-image
+    background-repeat
+    background-attachment
+    background-position*/
 .fixed-bg-1 {
-    background: url("http://cs-server.usc.edu:45678/hw/hw3/images/image6.jpg") fixed  no-repeat -372px 45px;
+    background: url("http://cs-server.usc.edu:45678/hw/hw3/images/image6.jpg") no-repeat fixed -372px 45px;
     background-size: 1928px 1183px;
     width: 1193px;
     height: 650px;  
 }
 
 .fixed-bg-2 {
-    background: url("http://cs-server.usc.edu:45678/hw/hw3/images/image5.jpg") fixed no-repeat 0 -264px;
+    background: url("http://cs-server.usc.edu:45678/hw/hw3/images/image5.jpg") no-repeat fixed 0 -264px;
     background-size: 1193px 1236px;
     width: 1193px;
     height: 478px;
