@@ -17,7 +17,6 @@
         </style>
     </head>
     <body>
-
         <h1>Enter URL for Trucking List JSON File</h1>
         <div>
             <form>
@@ -28,7 +27,6 @@
         </div>
 
         <script type="text/javascript"> 
-
             var html_text;
 
             function showHTML(form) {
@@ -37,26 +35,22 @@
                     alert("Please enter a JSON file name!");
                     return;
                 }
-
                 if(loadJSON(URL) == false) {
                     return;
                 } else {
                     var jsonDoc =loadJSON(URL);          
                 }
-
                 try {
                     jsonDoc = JSON.parse(jsonDoc);   
                 } catch(err) {
                     alert("Invalid JSON file. pleas try again!");
                     return;
                 }
-
                 if(generateHTML(jsonDoc) == false) {
                     return;
                 } else {
                     jsonDoc.onload = generateHTML(jsonDoc);    
                 }
-   
                 var hWin = window.open("", "HW4", "height=800, width=1000");
                 hWin.document.write(html_text);
                 hWin.document.close();
@@ -71,7 +65,6 @@
                     alert("The JSON file does not exist. Please try again!");
                     return false;
                 }
-
                 // returns a DOMString
                 var jsonDoc = xmlhttp.responseText;
                 return jsonDoc; 
@@ -83,7 +76,6 @@
                 html_text += "<table border = '2'>";
                 html_text += "<thead>";
                 html_text += "<tr>";
-
                 var header = jsonDoc.Mainline.Table.Header.Data;
                 for(var i = 0; i < header.length; i++) {
                     html_text += "<th>" + header[i] + "</th>";
@@ -95,12 +87,9 @@
                     alert("No trucking companies contained. Please try again!");
                     return false;
                 }
-
                 for(var i = 0; i < rows.length; i++) {
-
                     var truckingObj = rows[i];
                     html_text += "<tr>";
-
                     var trucking_keys = Object.keys(truckingObj);
                     for(var j = 0; j < trucking_keys.length; j++) {
                         var keyValue = trucking_keys[j];
@@ -117,7 +106,6 @@
                                     html_text += "<li>" + hubData[k] + "</li>";
                                 }
                             }
-
                             html_text +="</ul></td>";
                         } else if(trucking_keys[j] == "HomePage") {
                             html_text += "<td><a href='" + truckingObj[keyValue] + "'>" + truckingObj[keyValue] + "</a></td>";
@@ -129,8 +117,6 @@
                 }
                 html_text += "</tbody></table></body></html>";
             }
-
-        </script>
-    
+        </script> 
     </body>
     </html>    
