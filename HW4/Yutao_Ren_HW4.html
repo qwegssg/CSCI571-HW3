@@ -85,19 +85,16 @@
                     alert("No trucking companies contained. Please try again!");
                     return false;
                 }
-                for(var i = 0; i < rows.length; i++) {
-                    var truckingObj = rows[i];
+                for(let truckingObj of rows) {
                     html_text += "<tr>";
                     var trucking_keys = Object.keys(truckingObj);
-                    for(var j = 0; j < trucking_keys.length; j++) {
-                        var keyValue = trucking_keys[j];
-                        if(trucking_keys[j] == "Logo") {
+                    for(let keyValue of trucking_keys) {
+                        if(keyValue == "Logo") {
                             html_text += "<td><img src='" + truckingObj[keyValue] + "' width='300px' height='150px'></td>";     
-                        } else if(trucking_keys[j] == "Hubs") {
+                        } else if(keyValue == "Hubs") {
                             var hubData = truckingObj[keyValue]["Hub"];
                             html_text += "<td><ul>";
-
-                            for(var k = 0; k < hubData.length; k++) {
+                            for(let k = 0; k < hubData.length; k++) {
                                 if(k == 0) {
                                     html_text += "<li><strong>" + hubData[k] + "</strong></li>";
                                 } else {
@@ -105,7 +102,7 @@
                                 }
                             }
                             html_text +="</ul></td>";
-                        } else if(trucking_keys[j] == "HomePage") {
+                        } else if(keyValue == "HomePage") {
                             html_text += "<td><a href='" + truckingObj[keyValue] + "'>" + truckingObj[keyValue] + "</a></td>";
                         } else {
                             html_text +="<td>" + truckingObj[keyValue] + "</td>";
